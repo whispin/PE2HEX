@@ -10,6 +10,7 @@ parser.add_argument('--key', default='\0', type=str,
                     help='Encryption key ascii string')
 
 args = parser.parse_args()
+print(args)
 file = bytearray(open(args.input, 'rb').read())
 
 with open(args.out, 'w') as output:
